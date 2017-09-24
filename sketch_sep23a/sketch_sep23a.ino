@@ -36,9 +36,9 @@ int method_easy_calcul(int x_value)
 //print method to linearly calcul Temperature
   void print_method() {
   
-    int  Result=method_easy_calcul(analogRead(SENS_PIN));
+    int  output=method_easy_calcul(analogRead(SENS_PIN));
     Serial.print( "    The Temperature   is :  ");
-   Serial.println(Result); 
+   Serial.println(output); 
    
 delay(500);
 }
