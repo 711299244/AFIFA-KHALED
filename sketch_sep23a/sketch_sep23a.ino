@@ -1,7 +1,7 @@
 #include <math.h>
 #define SENS_PIN 0
-// here to calcul the temperture by hard method 
-double Temperture(int RawADC) {
+// here to calcul the Temperature by hard method 
+double Temperature(int RawADC) {
  double Temp;
  Temp = log(10000.0*((1024.0/RawADC-1))); 
  Temp = 1 / (0.001129148 + (0.000234125 + (0.0000000876741 * Temp * Temp ))* Temp );
@@ -16,14 +16,14 @@ Serial.begin(9600);
 void loop() {
   int i;
 while (i <=1023){ 
-    int  Result=Temperture(analogRead(i));
-    Serial.print( "    The temperture in Fahrenheit  is :  ");
+    int  Result=Temperature(analogRead(i));
+    Serial.print( "    The Temperature in Fahrenheit  is :  ");
    Serial.println(Result);
    i=i+5;
    }
 delay(2000);
 }
-//linearly calcul Temperture
+//linearly calcul Temperature
 int method_easy_calcul(int x_value)
 {
   
@@ -33,11 +33,11 @@ int method_easy_calcul(int x_value)
   
   
   }
-//print method to linearly calcul Temperture
+//print method to linearly calcul Temperature
   void print_method() {
   
-    int  Result=Temperture(analogRead(SENS_PIN));
-    Serial.print( "    The temperture   is :  ");
+    int  Result=method_easy_calcul(analogRead(SENS_PIN));
+    Serial.print( "    The Temperature   is :  ");
    Serial.println(Result); 
    
 delay(500);
