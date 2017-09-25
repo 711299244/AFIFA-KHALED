@@ -135,15 +135,6 @@ Temp = Temp - 273.15;
  return Temp;
 }
 //******************************************************************************
-int calucte(int ACD2)
-{
- int i = 0;
- while(array_[i][0] < ACD2)
- {
-  i++;
- }
- return(array_[i][1]);  
-}
 
 int method_to_get_temp(int ADC_vale, float  A, float B){
   
