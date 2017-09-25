@@ -1,7 +1,7 @@
 
 #include <math.h>
-
-int array_[200][2] = {
+#define SENSOR_PIN 0
+int array_[170][2] = {
   { -10 , 0 },
 { 0 , -273 },
 { 10 , -55 },
@@ -118,7 +118,7 @@ void loop() {
   float A;
   float B;
  
-ADC = analogRead(A5);
+ADC = analogRead(SENSOR_PIN);
    // Serial.println(" The ADC value is : ");
     Serial.println(ADC);
  Serial.println("The Temperature value is : ");
