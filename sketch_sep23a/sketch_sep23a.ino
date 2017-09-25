@@ -113,8 +113,9 @@ Serial.begin(9600);
 // method to display the result  on serial monitor 
 void loop() {
   int ADC;  
-  for(ADC=0;ADC<170;ADC++)
-  {    int RESULT=(Temperature(ADC));
+ // for(ADC=0;ADC<170;ADC++)
+  //{   
+    int RESULT=(Temperature(ADC));
   float A;
   float B;
  
@@ -125,7 +126,7 @@ ADC = analogRead(SENSOR_PIN);
  Serial.println(RESULT);
  Serial.println(calucte(ADC));
     
-   } 
+ //  } 
        delay(3000);
 
 }
