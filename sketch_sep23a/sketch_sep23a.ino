@@ -100,9 +100,6 @@ int array_[200][2] = {
 { 940 , 90 },
 { 950 , 95 },
 { 960 , 100 },
-{ 970 , 106 },
-{ 980 , 114 },
-{ 990 , 124 }
 };
 
 //I write in this code the hard method to get the Temperature and the easy method to get the Temperature
