@@ -119,7 +119,7 @@ void loop() {
   float B;
  
 ADC = analogRead(SENSOR_PIN);
-   // Serial.println(" The ADC value is : ");
+    Serial.println(" The ADC value is : ");
     Serial.println(ADC);
  Serial.println("The Temperature value is : ");
  Serial.println(RESULT);
