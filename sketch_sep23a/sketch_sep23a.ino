@@ -113,7 +113,7 @@ Serial.begin(9600);
 // method to display the result  on serial monitor 
 void loop() {
   int ADC;  
-  for(ADC=0;ADC<200;ADC++)
+  for(ADC=0;ADC<170;ADC++)
   {    int RESULT=(Temperature(ADC));
   float A;
   float B;
