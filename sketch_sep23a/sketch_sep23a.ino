@@ -1,10 +1,10 @@
 #include <math.h>
 
 double array_ab[4][3]{
-  {200.0,0.19,-34.0},
-  {300.0,1.240,-53.7},
-  {900.0,0.23,44.143},
-  {1023.0,19.62,124},
+  {200.0,0.3321,- 54.596},
+  {300.0,0.1125,29.866},
+  {900.0,0.1254,-37.924},
+  {1023.0,1.3449,-1155.5},
 
 
 };
@@ -108,7 +108,35 @@ int array_[200][2] = {
 { 980 , 114 },
 { 990 , 124 }
 };
+double the_equation_we_got_from_exal_as_linearly(int ADC1)
+  double T;
 
+  {
+
+  if(1 <ADC1< 200)
+  {
+T = (0.3321* ADC1) - 54.596;
+  }
+
+  if( 200 <= ADC1 < 300)
+  {
+T = (01125 *ADC1) - 29.866;
+  }
+
+  if(300 <= ADC1 <900)
+  {
+T = (0.1254 * ADC1) - 37.924;
+  }
+
+  if(900 <= ADC1 <1023)
+  {
+T = (1.3449* ADC1) - 1155.5;
+  }
+
+  else
+  {
+  Serial.print("The values we got it not accuracy");
+  }
 //I write in this code the hard method to get the Temperature and the easy method to get the Temperature
 //***************************************************************** 
 //open serial port, sets rate to 9600 bps
@@ -116,35 +144,7 @@ void setup() {
 Serial.begin(9600);
 //pinMode(A5, INPUT);//Configures the specified pin to behave either as an input or an output
 }
-//*********************************************************************
-// method to display the result  on serial monitor 
-void loop() {
-  int ADC;  
-  int c= 0;
-int i = 0;
-bool  IsLightOn = true;
-ADC = analogRead(A5);
-   // Serial.println(" The ADC value is : ");
-    Serial.println(ADC);
-    //Serial.println("The Temperature value is : ");
-  Serial.println(RESULT);
 
-  while((i<=4) && ( IsLightOn))
-  {
-    i++;
-    if(ADC<=  array_ab[i][0])
-    {
-      IsLightOn = false;
-      Serial.println(i);
-    }
-  }
-  Serial.println(int (method_to_get_temp(ADC, array_ab[i][1],array_ab[i][2])));
-  c++;
-    
-   } 
-       delay(3000);
-
-}
 //***********************************************************************
 // here to calcul the Temperature by hard method 
 double Temperature(int RawADC) {
@@ -171,3 +171,32 @@ double  temp;
  return(temp);
   
   }
+//*********************************************************************
+// method to display the result  on serial monitor 
+void loop() {
+  int ADC;  
+  int c= 0;
+int i = 0;
+bool  IsLightOn = true;
+ADC = analogRead(A5);
+   // Serial.println(" The ADC value is : ");
+    Serial.println(ADC);
+    //Serial.println("The Temperature value is : ");
+  Serial.println(RESULT);
+Serial.println(the_equation_we_got_from_exal_as_linearly(ADC1));
+  while((i<=4) && ( IsLightOn))
+  {
+    i++;
+    if(ADC<=  array_ab[i][0])
+    {
+      IsLightOn = false;
+      Serial.println(i);
+    }
+  }
+  Serial.println(int (method_to_get_temp(ADC, array_ab[i][1],array_ab[i][2])));
+  c++;
+    
+   } 
+       delay(3000);
+
+}
