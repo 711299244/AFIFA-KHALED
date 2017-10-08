@@ -164,10 +164,9 @@ int calucte(int ACD2)
  }
  return(array_[i][1]);  
 }
-
-float method_to_get_temp(int ADC_vale, float  A, float B){
+doubl method_to_get_temp(int ADC_vale, doubl  A, doubl B){
   
- float  temp;
+doubl  temp;
  temp=A*ADC_vale+B;
  return(temp);
   
