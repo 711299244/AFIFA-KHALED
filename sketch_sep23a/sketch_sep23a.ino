@@ -135,7 +135,7 @@ T = (1.3449* ADC1) - 1155.5;
 
   else
   {
-  Serial.print("The values we got it not accuracy");
+  Serial.print("The values we got it is not accuracy");
   }
 //I write in this code the hard method to get the Temperature and the easy method to get the Temperature
 //***************************************************************** 
