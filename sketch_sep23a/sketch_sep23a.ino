@@ -183,7 +183,7 @@ ADC = analogRead(A5);
     Serial.println(ADC);
     //Serial.println("The Temperature value is : ");
   Serial.println(RESULT);
-Serial.println(the_equation_we_got_from_exal_as_linearly(ADC1));
+Serial.println(the_equation_we_got_from_exal_as_linearly(ADC));
   while((i<=4) && ( IsLightOn))
   {
     i++;
