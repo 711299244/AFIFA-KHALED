@@ -1,6 +1,6 @@
 #include <math.h>
 
-doubl array_ab[4][3]{
+double array_ab[4][3]{
   {200.0,0.19,-34.0},
   {300.0,1.240,-53.7},
   {900.0,0.23,-170.0},
@@ -164,9 +164,9 @@ int calucte(int ACD2)
  }
  return(array_[i][1]);  
 }
-doubl method_to_get_temp(int ADC_vale, doubl  A, doubl B){
+double method_to_get_temp(int ADC_vale, double  A, double B){
   
-doubl  temp;
+double  temp;
  temp=A*ADC_vale+B;
  return(temp);
   
