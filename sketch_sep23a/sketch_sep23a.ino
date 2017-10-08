@@ -1,14 +1,12 @@
-
 #include <math.h>
-#define SENSOR_PIN 0
-int array_[170][2] = {
+
+int array_[200][2] = {
   { -10 , 0 },
-{ 0 , -273 },
 { 10 , -55 },
 { 20 , -45 },
 { 30 , -39 },
 { 40 , -35 },
-{ 50 , -31 },                                                                                                                                                      
+{ 50 , -31 },
 { 60 , -28 },
 { 70 , -25 },
 { 80 , -23 },
@@ -23,9 +21,6 @@ int array_[170][2] = {
 { 170 , -8 },
 { 180 , -6 },
 { 190 , -5 },
-{ 200 , -4 },
-{ 210 , -3 },
-{ 220 , -2 },
 { 230 , -1 },
 { 240 , 0 },
 { 250 , 1 },
@@ -100,6 +95,9 @@ int array_[170][2] = {
 { 940 , 90 },
 { 950 , 95 },
 { 960 , 100 },
+{ 970 , 106 },
+{ 980 , 114 },
+{ 990 , 124 }
 };
 
 //I write in this code the hard method to get the Temperature and the easy method to get the Temperature
@@ -113,20 +111,28 @@ Serial.begin(9600);
 // method to display the result  on serial monitor 
 void loop() {
   int ADC;  
- // for(ADC=0;ADC<170;ADC++)
-  //{   
-    int RESULT=(Temperature(ADC));
-  float A;
-  float B;
- 
-ADC = analogRead(SENSOR_PIN);
-    Serial.println(" The ADC value is : ");
+  int c= 0;
+int i = 0;
+bool  IsLightOn = true;
+ADC = analogRead(A5);
+   // Serial.println(" The ADC value is : ");
     Serial.println(ADC);
- Serial.println("The Temperature value is : ");
- Serial.println(RESULT);
- Serial.println(calucte(ADC));
+    //Serial.println("The Temperature value is : ");
+  Serial.println(RESULT);
+
+  while((i<=1023) && ( IsLightOn))
+  {
+    i++;
+    if(ADC<= array_[i][0])
+    {
+      IsLightOn = false;
+      Serial.println(i);
+    }
+  }
+  Serial.println(int (method_to_get_temp(ADC,array_[i][1], array_[i][2])));
+  c++;
     
- //  } 
+   } 
        delay(3000);
 
 }
@@ -150,12 +156,10 @@ int calucte(int ACD2)
  return(array_[i][1]);  
 }
 
-int method_to_get_temp(int ADC_vale, float  A, float B){
+float method_to_get_temp(int ADC_vale, float  A, float B){
   
  float  temp;
  temp=A*ADC_vale+B;
  return(temp);
-
- 
   
   }
