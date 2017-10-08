@@ -1,5 +1,14 @@
 #include <math.h>
 
+doubl array_ab[4][3]{
+  {200.0,0.19,-34.0},
+  {300.0,1.240,-53.7},
+  {900.0,0.23,-170.0},
+  {1023.0,22.62,-124},
+
+
+};
+
 int array_[200][2] = {
   { -10 , 0 },
 { 10 , -55 },
@@ -120,16 +129,16 @@ ADC = analogRead(A5);
     //Serial.println("The Temperature value is : ");
   Serial.println(RESULT);
 
-  while((i<=1023) && ( IsLightOn))
+  while((i<=4) && ( IsLightOn))
   {
     i++;
-    if(ADC<= array_[i][0])
+    if(ADC<=  array_ab[i][0])
     {
       IsLightOn = false;
       Serial.println(i);
     }
   }
-  Serial.println(int (method_to_get_temp(ADC,array_[i][1], array_[i][2])));
+  Serial.println(int (method_to_get_temp(ADC, array_ab[i][1],array_ab[i][2])));
   c++;
     
    } 
