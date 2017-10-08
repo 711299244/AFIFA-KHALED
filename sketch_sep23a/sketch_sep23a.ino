@@ -108,7 +108,7 @@ int array_[200][2] = {
 { 980 , 114 },
 { 990 , 124 }
 };
-double the_equation_we_got_from_exal_as_linearly(int ADC1)
+double the_equation_we_got_from_exal_as_linearly(int ADC1){
   double T;
 
   {
@@ -136,7 +136,7 @@ T = (1.3449* ADC1) - 1155.5;
   else
   {
   Serial.print("The values we got it is not accuracy");
-  }
+  }}
 //I write in this code the hard method to get the Temperature and the easy method to get the Temperature
 //***************************************************************** 
 //open serial port, sets rate to 9600 bps
