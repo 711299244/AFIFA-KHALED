@@ -16,3 +16,5 @@ Is not it nice to have a device that lights your room to turn on and turn off th
 For my final project, I will use the PIR Sensor to detect any movement occurring in a 20-foot orbit, which can monitor movement from 20 feet. I will also use the Relay to connect room lamps, for example, in order for Relay to control the power of the lights. And of course the Arduino, which is the heart of the project, I will program it to accomplish its mission successfully. Maybe I will be able also to improve it to do a security device against theft, or a device that runs your favourite music while in the room.
 
 
+   #   Materials
+   
