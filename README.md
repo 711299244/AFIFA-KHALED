@@ -23,7 +23,7 @@ For my final project, I will use the PIR Sensor to detect any movement occurring
    
    *-Breadboar                                                                                                                                                                                                                            
 
-   *- Pir snsor
+   *- Pir sensor
    
    *- Relay
 
