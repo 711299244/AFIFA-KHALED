@@ -18,3 +18,14 @@ For my final project, I will use the PIR Sensor to detect any movement occurring
 
    #   Materials
    
+
+   *-Materials
+   
+   *-Breadboar                                                                                                                                                                                                                            
+
+   *- Pir snsor
+   *- Relay
+
+  *- Arduino
+
+   *- Jumper Wires
