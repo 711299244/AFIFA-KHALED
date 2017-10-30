@@ -56,7 +56,7 @@ Gnd port on the breadboard.Connect the signal cable to port 10 on the card.
 4-Connect the LED's long (+) leg to port 13 and the leg (-) to the Gnd port next to port 13
 
 
-![alt text](https://raw.githubusercontent.com/711299244/Homework-AFIFA-KHALED-/master/Project/Run_Project.jpg)
+![alt text](https://raw.githubusercontent.com/711299244/Homework-AFIFA-KHALED-/master/Project/Run_Project.png)
 #  The programming text is written as follows:
 
 When the motion sensor detects any movement in its surroundings, it activates the LED and the relay
