@@ -40,12 +40,11 @@ For my final project, I will use the PIR Sensor to detect any movement occurring
  
  
   
-![alt text](https://raw.githubusercontent.com/711299244/Homework-AFIFA-KHALED-/master/Project/1_step.png)
 
 2-Connect the positive power cord of the sensor to the 5 v port on the breadboard, and the negative power cord to
 Gnd port on the breadboard. Plug the Signal cable into port 9 on the card
 
-![alt text](https://raw.githubusercontent.com/711299244/Homework-AFIFA-KHALED-/master/Project/2_step.png)
+
 
 3-Connect the reel power cord to the 5 v port on the breadboard, and the negative power cord to the
 Gnd port on the breadboard.Connect the signal cable to port 10 on the card.
@@ -56,7 +55,7 @@ Gnd port on the breadboard.Connect the signal cable to port 10 on the card.
 
 4-Connect the LED's long (+) leg to port 13 and the leg (-) to the Gnd port next to port 13
 
-![alt text](https://raw.githubusercontent.com/711299244/Homework-AFIFA-KHALED-/master/Project/Run_Project.jpg)
+
 
 #  The programming text is written as follows:
 
