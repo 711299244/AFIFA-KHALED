@@ -48,6 +48,8 @@ Gnd port on the breadboard. Plug the Signal cable into port 9 on the card
 
 3-Connect the reel power cord to the 5 v port on the breadboard, and the negative power cord to the
 Gnd port on the breadboard.Connect the signal cable to port 10 on the card.
+
+
 4-Connect the LED's long (+) leg to port 13 and the leg (-) to the Gnd port next to port 13
 
 ![alt text](https://raw.githubusercontent.com/711299244/Homework-AFIFA-KHALED-/master/Project/3_step.jpg)
