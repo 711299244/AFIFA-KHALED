@@ -74,7 +74,7 @@ https://www.youtube.com/watch?v=pePXYfGVo5o
 
 This is a great starting point for future work with this project. I will be able also to improve it to do
  a security device against theft, or a device that runs your favourite music while in the room. , etc.
- In conjunction with software from other groups this project could be almost fully automated and controlled
+ In conjunction with software from other groups this project could be almost fully automated and controlled function.
 
 
 
