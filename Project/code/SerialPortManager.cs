@@ -28,7 +28,7 @@ namespace SerialPortP.Serial
 
         
         ~SerialPortManager()
-        {
+        {  //CODE HERE
             Dispose(false);
         }
 
