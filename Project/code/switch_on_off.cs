@@ -29,6 +29,7 @@ namespace SerialPortP
 
         private void button1_Click(object sender, EventArgs e)
         {
+        //CODE HERE
             serialPort1.Write("A");
         }
 
