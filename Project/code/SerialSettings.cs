@@ -28,6 +28,7 @@ namespace SerialPortP.Serial
         /// </summary>
         public string PortName
         {
+         //CODE HERE
             get { return _portName; }
             set
             {
