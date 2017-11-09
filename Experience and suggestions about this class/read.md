@@ -1,4 +1,4 @@
-This class was was very helpful
+This class  was very helpful
 ##   I have suggestions
  ##  frist about the schedule 
 I hope it will be more than 10 weeks.
