@@ -31,7 +31,7 @@ For my final project, I will use the PIR Sensor to detect any movement occurring
 
   *- Arduino
 
-   *- Jumper Wires
+   *- Jumper Wires.
    
    #  How to connect this project
    
