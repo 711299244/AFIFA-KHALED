@@ -4,7 +4,7 @@
 This class was was very helpful
 ##   I have suggestions
  ##  About the schedule 
-I hope it will be more than 10 weeks.
+I hope it will be more than 10 weeks..
 
 
 
