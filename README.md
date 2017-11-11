@@ -33,6 +33,16 @@ For my final project, I will use the PIR Sensor to detect any movement occurring
 
    *- Jumper Wires.
    
+   ### Bill of Materials
+|component|vendor|
+|---|---|
+|Arduino|(https://www.sparkfun.com/products/13975)|
+|Relay sensor|(https://www.sparkfun.com/products/13769)|
+|Pir sensor|(https://www.sparkfun.com/products/13968)|
+|Breadboard|(https://www.sparkfun.com/products/12002)|
+|Jumper wires|(https://www.sparkfun.com/products/8431 )|
+|Mini-B USB cable|(https://www.sparkfun.com/products/11301)|
+   
    #  How to connect this project
    
    1-Connect the 5volt port on the Arduino to the power outlets on the side of the breadboard and the
